@@ -1,4 +1,5 @@
 // src/app/layout.tsx
+import AuthLoader from "./components/AuthLoader";
 import "./globals.css";
 
 type LayoutProps = {
@@ -13,6 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <AuthLoader />
         {children}
         {modal}
       </body>
